@@ -1,0 +1,14 @@
+{
+    "dinheiro": {
+        "desconto": "5%",
+        "taxa": ""
+    },
+    "debito": {
+        "desconto": "",
+        "taxa": ""
+    },
+    "credito": {
+        "desconto": "",
+        "taxa": "3%"
+    }
+}
