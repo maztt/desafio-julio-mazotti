@@ -37,21 +37,21 @@ Atualmente a Lanchonete aceita as seguintes formas de pagamento:
  - debito
  - credito
 
-O sistema deve receber essa informação como string, utilizando a grafia exatamente igual aos exemplos acima.
+- [x] O sistema deve receber essa informação como string, utilizando a grafia exatamente igual aos exemplos acima.
 
 ### DESCONTOS E TAXAS
- - Pagamento em dinheiro tem 5% de desconto
- - Pagamento a crédito tem acréscimo de 3% no valor total
+- [x] Pagamento em dinheiro tem 5% de desconto
+- [x] Pagamento a crédito tem acréscimo de 3% no valor total
 
 ### OUTRAS REGRAS
 
-- Caso item extra seja informado num pedido que não tenha o respectivo item principal, apresentar mensagem "Item extra não pode ser pedido sem o principal".
-- Combos não são considerados como item principal.
-- É possível pedir mais de um item extra sem precisar de mais de um principal.
-- Se não forem pedidos itens, apresentar mensagem "Não há itens no carrinho de compra!"
-- Se a quantidade de itens for zero, apresentar mensagem "Quantidade inválida!".
-- Se o código do item não existir, apresentar mensagem "Item inválido!"
-- Se a forma de pagamento não existir, apresentar mensagem "Forma de pagamento inválida!"
+- [x] Caso item extra seja informado num pedido que não tenha o respectivo item principal, apresentar mensagem "Item extra não pode ser pedido sem o principal".
+- [x] Combos não são considerados como item principal.
+- [x] É possível pedir mais de um item extra sem precisar de mais de um principal.
+- [x] Se não forem pedidos itens, apresentar mensagem "Não há itens no carrinho de compra!"
+- [x] Se a quantidade de itens for zero, apresentar mensagem "Quantidade inválida!".
+- [x] Se o código do item não existir, apresentar mensagem "Item inválido!"
+- [x] Se a forma de pagamento não existir, apresentar mensagem "Forma de pagamento inválida!"
 
 ### O CÓDIGO
 Você está recebendo uma estrutura básica para desenvolver a lógica do caixa. O arquivo principal está localizado dentro da pasta `src` e se chama `caixa-da-lanchonete.js`. Você pode desenvolver a sua lógica criando outros arquivos, métodos e até mesmo outras classes, porém o resultado deve poder ser obtido através do método `calcularValorDaCompra`.
@@ -67,7 +67,7 @@ npm install
 ```
 
 ### VALIDANDO A SOLUÇÃO
-Junto com a estrutura básica você está recebendo alguns cenários de testes para auxiliar na validação da sua solução. Recomendamos que você crie mais casos de teste para aumentar a confiabilidade da sua solução.
+- [x] Junto com a estrutura básica você está recebendo alguns cenários de testes para auxiliar na validação da sua solução. Recomendamos que você crie mais casos de teste para aumentar a confiabilidade da sua solução.
 Para testar sua solução com os cenários já criados, basta rodar o seguinte comando:
 ```bash
 npm test
@@ -83,9 +83,9 @@ EXEMPLO:
 ```
 
 ### OUPUTS
-O retorno do método `calcularValorDaCompra` deve ser sempre uma string e conteúdo dela pode ser ou o valor total da compra ou uma mensagem de erro conforme as regras descritas anteriormente. O valor da compra deve ser formatado com `R$` e decimais separados por vírgula.
+- [x] O retorno do método `calcularValorDaCompra` deve ser sempre uma string e conteúdo dela pode ser ou o valor total da compra ou uma mensagem de erro conforme as regras descritas anteriormente. O valor da compra deve ser formatado com `R$` e decimais separados por vírgula.
 
-Para padronizar a quantidade de decimais, utilize o método `toFixed` do JavaScript. Esse método serve o propósito deste desafio, porém na vida real a regra de arredondamento deve ser conferida! Para saber mais consulte a [Documentação do Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed).
+- [x] Para padronizar a quantidade de decimais, utilize o método `toFixed` do JavaScript. Esse método serve o propósito deste desafio, porém na vida real a regra de arredondamento deve ser conferida! Para saber mais consulte a [Documentação do Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed).
 EXEMPLO:
 ```js
 // exemplo de saída do valor da compra
